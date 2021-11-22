@@ -36,9 +36,9 @@ export default class App extends Component {
     this.client= new Mqtt.Client('ws://8thsense.io:1884')
 
     this.client.connect({
-      clientId: '18',
-      username: "eight",
-      password: "eight"
+      clientId: '*',
+      username: "***",
+      password: "***"
     },err=>{err ? console.log("Connect Error:",err):false});
 
     this.client.on(Mqtt.Event.Connect, () =>{
